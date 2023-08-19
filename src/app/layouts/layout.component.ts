@@ -2,8 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { EventService } from '../core/services/event.service';
 import {
-  LAYOUT_VERTICAL, LAYOUT_HORIZONTAL, LAYOUT_TWOCOLUMN, LAYOUT_MODE, LAYOUT_WIDTH,
-  LAYOUT_POSITION, SIDEBAR_SIZE, SIDEBAR_COLOR, TOPBAR, LAYOUT_SEMIBOX
+  LAYOUT_VERTICAL
 } from './layout.model';
 
 @Component({
@@ -22,7 +21,7 @@ export class LayoutComponent implements OnInit {
   constructor(private eventService: EventService) { }
 
   ngOnInit(): void {
-    this.layoutType = LAYOUT_TWOCOLUMN;
+    this.layoutType = LAYOUT_VERTICAL;
 
     document.body.setAttribute('layout',this.layoutType)
 
@@ -38,26 +37,5 @@ export class LayoutComponent implements OnInit {
   */
    isVerticalLayoutRequested() {
     return this.layoutType === LAYOUT_VERTICAL;
-  }
-
-  /**
-   * Check if the horizontal layout is requested
-   */
-   isHorizontalLayoutRequested() {
-    return this.layoutType === LAYOUT_HORIZONTAL;
-  }
-
-  /**
-   * Check if the horizontal layout is requested
-   */
-  isTwoColumnLayoutRequested() {
-    return this.layoutType === LAYOUT_TWOCOLUMN;
-  }
-
- /**
-   * Check if the semibox layout is requested
-   */
-  isSemiboxLayoutRequested() {
-    return this.layoutType === LAYOUT_SEMIBOX;
   }
 }

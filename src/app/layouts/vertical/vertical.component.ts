@@ -17,7 +17,7 @@ export class VerticalComponent implements OnInit {
     if (document.documentElement.getAttribute('data-layout') == 'vertical') {
       document.documentElement.setAttribute('data-layout', 'vertical');
     } else {
-      document.documentElement.setAttribute('data-layout', 'semibox');
+      document.documentElement.setAttribute('data-layout', 'vertical');
     }
     document.documentElement.setAttribute('data-topbar', 'light');
     document.documentElement.setAttribute('data-sidebar', 'light');

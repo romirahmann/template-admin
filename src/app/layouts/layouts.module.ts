@@ -7,6 +7,7 @@ import { SimplebarAngularModule } from 'simplebar-angular';
 import { LanguageService } from '../core/services/language.service';
 import { TranslateModule } from '@ngx-translate/core';
 
+
 // Component pages
 import { LayoutComponent } from './layout.component';
 import { VerticalComponent } from './vertical/vertical.component';

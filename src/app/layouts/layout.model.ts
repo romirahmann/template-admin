@@ -1,12 +1,6 @@
 // export layout related constants
 export const LAYOUT_VERTICAL = 'vertical';
 
-export const LAYOUT_HORIZONTAL = 'horizontal';
-
-export const LAYOUT_TWOCOLUMN = 'twocolumn';
-
-export const LAYOUT_SEMIBOX = 'semibox';
-
 export const LAYOUT_MODE = 'light';
 
 export const LAYOUT_WIDTH = 'fluid';

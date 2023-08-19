@@ -20,26 +20,12 @@ import { FlatpickrModule } from 'angularx-flatpickr';
 //Module
 import { DashboardsRoutingModule } from "./dashboards-routing.module";
 import { SharedModule } from '../../shared/shared.module';
-import { WidgetModule } from '../../shared/widget/widget.module';
-
-
-// Component
-import { AnalyticsComponent } from './analytics/analytics.component';
-import { CrmComponent } from './crm/crm.component';
-import { CryptoComponent } from './crypto/crypto.component';
-import { ProjectsComponent } from './projects/projects.component';
-import { NftComponent } from './nft/nft.component';
-import { JobComponent } from './job/job.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 @NgModule({
   declarations: [
-    AnalyticsComponent,
-    CrmComponent,
-    CryptoComponent,
-    ProjectsComponent,
-    NftComponent,
-    JobComponent
+    DashboardComponent,
   ],
   imports: [
     CommonModule,
@@ -55,7 +41,6 @@ import { JobComponent } from './job/job.component';
     FlatpickrModule.forRoot(),
     DashboardsRoutingModule,
     SharedModule,
-    WidgetModule,
     NgbTypeaheadModule,
     FormsModule,
     ReactiveFormsModule,
